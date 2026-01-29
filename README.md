@@ -26,7 +26,7 @@
 AI-Powered Worker Productivity Dashboard - A full-stack application built with FastAPI, React, and Docker that monitors manufacturing productivity through AI-generated events. Features include real-time metrics computation, event deduplication, and comprehensive data visualization.
 
 A full-stack web application for monitoring manufacturing worker productivity using AI-powered CCTV camera events. This system ingests computer vision events, stores them in a database, computes productivity metrics, and displays them in a real-time dashboard.
-
+```
 ## 🏗️ Architecture Overview
 ```
 ┌─────────────────┐
