@@ -1,5 +1,30 @@
 # AI-Powered Worker Productivity Dashboard
 
+## 🌐 Live Demo
+
+**🔗 Frontend Dashboard:** https://productivity-frontend-njfu.onrender.com
+**🔗 Backend API:** https://productivity-backend-3mns.onrender.com
+**🔗 API Documentation:** https://productivity-backend-3mns.onrender.com/docs
+
+> ⚠️ **Note:** This application uses Render.com's free tier. Services may take 30-60 seconds to wake up after periods of inactivity. Please be patient on the first load.
+
+---
+
+## 📋 Quick Start
+
+1. **Visit the Dashboard:** Click the frontend link above
+2. **View Real-time Metrics:** Factory, worker, and workstation performance
+3. **Test Data Refresh:** Click "Reseed Data" button to generate new dummy data
+4. **Explore API:** Visit the API documentation link to test endpoints interactively
+5. **Test Event Ingestion:** Use the API docs to POST new events
+
+---
+
+---
+### **3. Brief Description:**
+```
+AI-Powered Worker Productivity Dashboard - A full-stack application built with FastAPI, React, and Docker that monitors manufacturing productivity through AI-generated events. Features include real-time metrics computation, event deduplication, and comprehensive data visualization.
+
 A full-stack web application for monitoring manufacturing worker productivity using AI-powered CCTV camera events. This system ingests computer vision events, stores them in a database, computes productivity metrics, and displays them in a real-time dashboard.
 
 ## 🏗️ Architecture Overview
