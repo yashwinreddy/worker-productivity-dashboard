@@ -6,6 +6,11 @@ export default defineConfig({
   server: {
     host: true,
     port: 5173,
+    // Allow Render preview host when running inside Render or Codespaces
+    // Add any additional hosts here if needed
+    allowedHosts: [
+      'productivity-frontend-f1vn.onrender.com'
+    ],
     watch: {
       usePolling: true
     }
