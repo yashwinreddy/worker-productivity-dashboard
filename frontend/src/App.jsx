@@ -3,7 +3,7 @@ import FactorySummary from './components/FactorySummary'
 import WorkerMetrics from './components/WorkerMetrics'
 import WorkstationMetrics from './components/WorkstationMetrics'
 
-const API_URL = 'https://urban-capybara-r5r99pjpvpx357qv-8000.app.github.dev'
+const API_URL = 'https://productivity-backend-otsq.onrender.com'
 
 function App() {
     const [factoryMetrics, setFactoryMetrics] = useState(null)
