@@ -3,7 +3,7 @@ import FactorySummary from './components/FactorySummary'
 import WorkerMetrics from './components/WorkerMetrics'
 import WorkstationMetrics from './components/WorkstationMetrics'
 
-const API_URL = 'https://productivity-backend-otsq.onrender.com'
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 function App() {
     const [factoryMetrics, setFactoryMetrics] = useState(null)
