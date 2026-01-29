@@ -22,7 +22,6 @@ services:
     plan: free
     dockerfilePath: ./frontend/Dockerfile
     dockerContext: ./frontend
-    dockerCommand: nginx -g 'daemon off;'
     envVars:
       - key: VITE_API_URL
         value: https://productivity-backend.onrender.com
