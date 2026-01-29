@@ -1,0 +1,28 @@
+services:
+  # Backend Service
+  - type: web
+    name: productivity-backend
+    runtime: docker
+    region: oregon
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./data/productivity.db
+      - key: PORT
+        value: 8000
+    healthCheckPath: /health
+
+  # Frontend Service
+  - type: web
+    name: productivity-frontend
+    runtime: docker
+    region: oregon
+    plan: free
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    dockerCommand: nginx -g 'daemon off;'
+    envVars:
+      - key: VITE_API_URL
+        value: https://productivity-backend.onrender.com
